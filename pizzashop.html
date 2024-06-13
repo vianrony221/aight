@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> PAPA JOHN'S -Better ingredients better pizza </title>
+    <link rel="logo" href="./img/papajohns.jpg">
+    <link rel="stylesheet" href="./css/stylesheet.css">
+    <!--Viyan Rony 200586309 -->
+</head>
+<body>
+<div>
+    <header>
+        <h1>Welcome to Papa John's Pizza Shop</h1>
+    </header>
+    <h2>Order Now!!</h2>
+    <form>
+        <!-- No of pizza -->
+        <label for="numPizzas">No of pizzas?</label>
+        <input type="number" id="numPizzas" name="numPizzas" min="1" max="10" required><br>
+
+        <!-- Pizza Toppings -->
+        <label for="toppings">Choose your toppings:</label><br>
+        <input type="checkbox" id="pepperoni" name="toppings" value="pepperoni">
+        <label for="pepperoni">Pepperoni</label><br>
+        <input type="checkbox" id="mushrooms" name="toppings" value="mushrooms">
+        <label for="mushrooms">Mushrooms</label><br>
+        <input type="checkbox" id="olives" name="toppings" value="olives">
+        <label for="olives">Olives</label><br>
+
+        <!-- Pizza Size -->
+        <label for="pizzaSize">What size is the pizza?</label>
+        <select id="pizzaSize" name="pizzaSize">
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+            <option value="large">Extra Large</option>
+        </select><br>
+
+        <!-- Customer Information -->
+        <label for="customerName">Name:</label>
+        <input type="text" id="customerName"  required><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" required><br>
+
+        <!-- Special Instructions -->
+        <label for="instructions">Special instructions:</label><br>
+        <textarea id="instructions"></textarea><br>
+
+        <!-- Submit Button -->
+        <button type="submit">Place Order</button>
+    </form>
+    </form>
+    <section id="orderConfirmation">
+        <h2>Order Confirmation</h2>
+        <div id="orderDetails">
+            <!-- Order details will be displayed here -->
+        </div>
+    </section>
+
+
+</div>
+</body>
+</html>
